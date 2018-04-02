@@ -11,5 +11,5 @@ Spring Cloud 微服务环境，快速搭建demo
 
 
 四、访问地址：
-http://127.0.0.1:18882/cart/getCartInfo?userId=16130151
-http://127.0.0.1:18882/kafka/send?message=hello
+http://127.0.0.1:18882/cart/getCartInfo?userId=16130151<br/>
+http://127.0.0.1:18882/kafka/send?message=hello<br/>
