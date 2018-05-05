@@ -18,6 +18,17 @@ spring:
         password: ${config.jdbc.password}
   aop: 
     proxy-target-class: true
+  redis:
+        database: 0
+        host: 127.0.0.1
+        password:
+        pool:
+            max-active: 300
+            max-idle: 100
+            max-wait: 1000
+            min-idle: 0
+        port: 6379
+        timeout: 2000
 
 redis:
   timeout: 2000
