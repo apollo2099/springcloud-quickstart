@@ -5,7 +5,7 @@ spring:
     consul:
       config:
         enabled: false
-      host: 192.168.178.10
+      host: localhost
       port: 8500
       discovery:
         hostname: localhost

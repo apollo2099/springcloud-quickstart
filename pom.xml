@@ -85,11 +85,7 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.juanpi</groupId>
-            <artifactId>redis-spring-boot-starter</artifactId>
-            <version>1.0.0${jar.version.type}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -107,11 +103,19 @@
             <version>1.2.44</version>
         </dependency>
 
+        <!--
         <dependency>
             <groupId>de.ruedigermoeller</groupId>
             <artifactId>jp-fst</artifactId>
             <version>2.29</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.juanpi</groupId>
+            <artifactId>redis-spring-boot-starter</artifactId>
+            <version>1.0.0${jar.version.type}</version>
+        </dependency>
+        -->
 
     </dependencies>
 
