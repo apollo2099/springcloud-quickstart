@@ -7,9 +7,11 @@ Spring Cloud 微服务环境，快速搭建demo
 
 
 > 三、启动项目：
+
 启动Application的main方法
 
 
-> 四、访问地址：<br/>
+> 四、访问地址：
+
 http://127.0.0.1:18882/cart/getCartInfo?userId=16130151<br/>
 http://127.0.0.1:18882/kafka/send?message=hello<br/>
