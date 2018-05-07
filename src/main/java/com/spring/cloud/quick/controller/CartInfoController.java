@@ -36,10 +36,10 @@ public class CartInfoController {
 
         Object result = redisTemplate.opsForValue().get("userId");
         System.out.println(result);
-        logger.info("output result："+result);
-        CartInfoEntity cartInfoEntity = null;
-        //CartInfoEntity cartInfoEntity = cartInfoService.getCartInfoByUserId(userId);
-        //System.out.println(JSON.toJSONString(cartInfoEntity));
+        logger.info("getRedis output result："+result);
+
+        CartInfoEntity cartInfoEntity = cartInfoService.getCartInfoByUserId(userId);
+        logger.info("getCartInfoByUserId output result："+JSON.toJSONString(cartInfoEntity));
         return cartInfoEntity;
     }
 }

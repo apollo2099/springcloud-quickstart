@@ -20,7 +20,8 @@ public class CartInfoService {
     public CartInfoEntity getCartInfoByUserId(Long userId){
         // 获取分表名称
         String tableName ="js_cart_info";
-        tableName = TableModelHelper.getCartInfoTableName(String.valueOf(userId), tableName);
+        // 暂时先屏蔽分表功能
+        // tableName = TableModelHelper.getCartInfoTableName(String.valueOf(userId), tableName);
         // 组装参数
         Map<String,Object> param = new HashMap();
         param.put("userId",userId);
