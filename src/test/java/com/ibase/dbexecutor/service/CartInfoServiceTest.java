@@ -1,9 +1,10 @@
-package com.base.dbexecutor.controller;
+package com.ibase.dbexecutor.service;
 
 import com.alibaba.fastjson.JSON;
-import com.spring.cloud.quick.controller.CartInfoController;
+import com.ibase.dbexecutor.controller.CartInfoControllerTest;
 import com.spring.cloud.quick.entity.CartInfoEntity;
 import com.spring.cloud.quick.Application;
+import com.spring.cloud.quick.service.CartInfoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -14,26 +15,24 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 /**
- * 购物袋C端核心方法入口程序测试用例(Junit方式)
- * Created by huixiong on 2018/1/11.
+ * Created by huixiong on 2018/2/11.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes= Application.class)
 @WebAppConfiguration
-public class CartInfoControllerTest {
+public class CartInfoServiceTest {
+
     private static final Logger logger = LoggerFactory.getLogger(CartInfoControllerTest.class);
 
 
     @Autowired
-    private CartInfoController cartInfoController;
+    private CartInfoService cartInfoService;
 
 
     @Test
     public void testGetCartInfo(){
         Long userId = 16130151L;
-        CartInfoEntity cartInfoEntity = cartInfoController.getCartInfo(userId);
+        CartInfoEntity cartInfoEntity = cartInfoService.getCartInfoByUserId(userId);
         logger.info(JSON.toJSONString(cartInfoEntity));
     }
-
-
 }

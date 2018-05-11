@@ -1,7 +1,7 @@
-package com.base.dbexecutor.dao;
+package com.ibase.dbexecutor.dao;
 
 import com.alibaba.fastjson.JSON;
-import com.base.dbexecutor.controller.CartInfoControllerTest;
+import com.ibase.dbexecutor.controller.CartInfoControllerTest;
 import com.spring.cloud.quick.dao.CartInfoDao;
 import com.spring.cloud.quick.entity.CartInfoEntity;
 import com.spring.cloud.quick.utils.TableModelHelper;
