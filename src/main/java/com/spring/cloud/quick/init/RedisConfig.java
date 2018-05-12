@@ -60,6 +60,7 @@ public class RedisConfig{
         factory.setHostName(redisConnProperties.getHost());
         factory.setPort(redisConnProperties.getPort());
         factory.setPassword(redisConnProperties.getPassword());
+        factory.setTimeout(redisConnProperties.getTimeout());
         logger.info("JedisConnectionFactory bean init success.");
         return factory;
     }
