@@ -1,7 +1,6 @@
-package com.ibase.dbexecutor.controller;
+package com.spring.cloud.quick.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.spring.cloud.quick.controller.CartInfoController;
 import com.spring.cloud.quick.entity.CartInfoEntity;
 import com.spring.cloud.quick.Application;
 import org.junit.Test;

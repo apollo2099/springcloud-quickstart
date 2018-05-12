@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.cloud.quick.controller.CartInfoController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cache.annotation.EnableCaching;
@@ -40,6 +41,9 @@ public class RedisConfig{
 
     private static final Logger logger = LoggerFactory.getLogger(RedisConfig.class);
 
+    @Autowired
+    private RedisConnProperties redisConnProperties;
+
     @Bean
     @ConfigurationProperties(prefix="spring.redis.pool")
     public JedisPoolConfig getRedisConfig(){
@@ -53,6 +57,9 @@ public class RedisConfig{
         JedisConnectionFactory factory = new JedisConnectionFactory();
         JedisPoolConfig config = getRedisConfig();
         factory.setPoolConfig(config);
+        factory.setHostName(redisConnProperties.getHost());
+        factory.setPort(redisConnProperties.getPort());
+        factory.setPassword(redisConnProperties.getPassword());
         logger.info("JedisConnectionFactory bean init success.");
         return factory;
     }

@@ -1,10 +1,8 @@
-package com.ibase.dbexecutor.service;
+package com.spring.cloud.quick.service;
 
 import com.alibaba.fastjson.JSON;
-import com.ibase.dbexecutor.controller.CartInfoControllerTest;
 import com.spring.cloud.quick.entity.CartInfoEntity;
 import com.spring.cloud.quick.Application;
-import com.spring.cloud.quick.service.CartInfoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -22,7 +20,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @WebAppConfiguration
 public class CartInfoServiceTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(CartInfoControllerTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(CartInfoServiceTest.class);
 
 
     @Autowired

@@ -1,8 +1,6 @@
-package com.ibase.dbexecutor.dao;
+package com.spring.cloud.quick.dao;
 
 import com.alibaba.fastjson.JSON;
-import com.ibase.dbexecutor.controller.CartInfoControllerTest;
-import com.spring.cloud.quick.dao.CartInfoDao;
 import com.spring.cloud.quick.entity.CartInfoEntity;
 import com.spring.cloud.quick.utils.TableModelHelper;
 import com.spring.cloud.quick.Application;
@@ -26,7 +24,7 @@ import java.util.Map;
 @WebAppConfiguration
 public class CartInfoDaoTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(CartInfoControllerTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(CartInfoDaoTest.class);
 
 
     @Autowired
